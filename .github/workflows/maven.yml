@@ -31,3 +31,8 @@ jobs:
       run: |
         cd target
         ls -la
+    - name: Upload jar
+      uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: target/demo-1.0-SNAPSHOT.jar
